@@ -20,3 +20,14 @@ Repositório com atividades e projetos desenvolvidos durante minha graduação e
 ---
 
 🚀 Em constante evolução...
+
+### 🛒 Controle de Estoque
+- Sistema simples para gerenciar produtos
+- Uso de repetição (menu interativo)
+- Entrada e saída de dados
+- Cadastro e controle de itens
+
+📚 Aprendizados:
+- Estrutura de repetição (while)
+- Lógica de programação
+- Organização de dados
