@@ -1,0 +1,49 @@
+#Desafio 2 — Sistema de Notas dos Alunos
+#Crie um programa com menu para gerenciar notas de alunos.
+#Menu:
+#1 - Cadastrar aluno
+#2 - Adicionar nota para um aluno
+#3 - Consultar nota de um aluno
+#4 - Mostrar todos os alunos
+#5 - Sair do programa
+
+alunos = []
+notas = []
+opção = 0
+
+while opção != 5:
+
+    opção = int(input("qual sua opção? "))
+
+    if opção == 1:
+        nome = input("qual o nome do aluno? ")
+        alunos.append(nome)
+
+    if opção == 2:
+        nome = input("qual o nome do aluno? ")
+
+        if nome in alunos:
+            numero = int(input("qual é a nota? "))
+            notas.append(numero)
+
+        else:
+            print("nome não encontrado")
+
+    if opção == 3:
+        nome = input("nome do aluno? ")
+
+        if nome in alunos:
+            posição = alunos.index(nome)
+            print(notas[posição])
+
+        else:
+            print("aluno não encontrado")
+
+    if opção == 4:
+        for nome in alunos:
+            print("nomes:", nome)
+            posição = alunos.index(nome)
+            print(notas[posição])
+
+    if opção == 5:
+        print("programa encerrado")
