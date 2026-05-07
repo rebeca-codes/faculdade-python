@@ -31,3 +31,17 @@ Repositório com atividades e projetos desenvolvidos durante minha graduação e
 - Estrutura de repetição (while)
 - Lógica de programação
 - Organização de dados
+
+- # Sistema de Notas em Python
+
+Projeto simples de lógica de programação desenvolvido em Python.
+
+## Funcionalidades
+- Cadastro de alunos
+- Cadastro de notas
+- Consulta de notas
+- Listagem de alunos
+- Encerramento do sistema
+
+## Tecnologias
+- Python
