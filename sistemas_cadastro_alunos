@@ -1,0 +1,46 @@
+#sistema de cadastro de alunos.
+#1 - Cadastrar aluno
+#2 - Listar alunos
+#3 - Buscar aluno
+#4 - Sair
+
+opção=0
+alunos=[]
+while opção != 4: #vamos fazer esse while rodar ate que o usuario digite a opção 4 sair
+
+    print("1- cadastrar aluno")
+    print("2- listar alunos")
+    print("3- buscar alunos")
+    print("4- sair do programa")
+
+    opção=int(input("digite sua opção:"))
+    if opção == 1:
+        nome=input("digite o nome do aluno:")
+        idade=int(input("digite a idade:"))
+        curso=input("digite o nome do curso:")
+        aluno={
+            "nome": nome,
+            "idade": idade,
+             "curso": curso
+        }
+        alunos.append(aluno)
+        
+    if opção == 2:
+        for aluno in alunos:
+            print(aluno["nome"])
+            print(aluno["idade"])
+            print(aluno["curso"])
+
+    if opção == 3:
+        encontrou=False
+        for aluno in alunos:
+            nome_busca=input("digite o nome do aluno:")
+            if aluno["nome"] == nome_busca:
+                print(aluno["nome"])
+                print(aluno["idade"])
+                print(aluno["curso"])
+        if encontrou == False:
+            print("nome do aluno não encontrado.")
+
+    if opção == 4:
+        print("programa encerrado.")
